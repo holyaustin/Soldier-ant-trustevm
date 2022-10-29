@@ -8,7 +8,7 @@ module.exports = {
       chainId: 1337
     },
    
-    mumbai: {
+    trustevm: {
       url: process.env.ALCHEMY_RPC, 
       accounts: [process.env.PRIVATE_KEY],
     },

@@ -23,12 +23,12 @@ export default function Market() {
     return ipfsGateWayURL;
   };
 
-  // const rpcUrl = "https://matic-mumbai.chainstacklabs.com";
+  const rpcUrl = "https://api.testnet-dev.trust.one";
   // const rpcUrl = "http://localhost:8545";
 
   async function loadAssets() {
     /* create a generic provider and query for Talents */
-    const provider = new ethers.providers.JsonRpcProvider("https://matic-mumbai.chainstacklabs.com");
+    const provider = new ethers.providers.JsonRpcProvider(rpcUrl);
     const contract = new ethers.Contract(marketplaceAddress, Talent.abi, provider);
     const data = await contract.fetchMarketItems();
 
@@ -95,7 +95,7 @@ export default function Market() {
 
             <div key={i} className="shadow rounded-xl overflow-hidden border-2 border-gray-500 bg-purple-200">
               <div className="p-1">
-                <p style={{ height: "34px" }} className="text-2xl text-red-700 font-semibold">Price: {nft.price} MATIC</p>
+                <p style={{ height: "34px" }} className="text-2xl text-red-700 font-semibold">Price: {nft.price} EVM</p>
 
               </div>
               <img

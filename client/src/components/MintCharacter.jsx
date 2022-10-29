@@ -59,7 +59,7 @@ const MintCharacter = () => {
 
   const sendTxToBlockchain = async (metaData) => {
     try {
-      setTxStatus("connecting to Polygon Mumbai Blockchain.");
+      setTxStatus("connecting to Trust EVM Blockchain.");
       const web3Modal = new Web3Modal();
       const connection = await web3Modal.connect();
       const provider = new ethers.providers.Web3Provider(connection);
@@ -75,7 +75,7 @@ const MintCharacter = () => {
       await mintNFTTx.wait();
       return mintNFTTx;
     } catch (error) {
-      setErrorMessage("Failed to send tx to Polygon Mumbai.");
+      setErrorMessage("Failed to send tx to gon Trust EVM.");
       console.log(error);
     }
   };
@@ -86,7 +86,7 @@ const MintCharacter = () => {
     console.log("image ipfs path is", imgViewString);
     setImageView(imgViewString);
     setMetaDataURl(getIPFSGatewayURL(metaData.url));
-    setTxURL(`https://mumbai.polygonscan.com/tx/${mintNFTTx.hash}`);
+    setTxURL(`https://trustscan.one/tx/${mintNFTTx.hash}`);
     setTxStatus("Talent registration was successfully!");
     console.log("Preview details completed");
   };
@@ -96,7 +96,7 @@ const MintCharacter = () => {
     // 1. upload NFT content via NFT.storage
     const metaData = await uploadNFTContent(uploadedFile);
 
-    // 2. Mint a NFT token on Polygon
+    // 2. Mint a NFT token on Trust EVM
     const mintNFTTx = await sendTxToBlockchain(metaData);
 
     // 3. preview the minted nft
@@ -137,7 +137,7 @@ const MintCharacter = () => {
             onChange={(e) => updateFormInput({ ...formInput, hp: e.target.value })}
           />
           <input
-            placeholder="Asset Price in Matic"
+            placeholder="Asset Price in EVM"
             className="mt-5 border rounded p-4 text-xl"
             onChange={(e) => updateFormInput({ ...formInput, price: e.target.value })}
           />

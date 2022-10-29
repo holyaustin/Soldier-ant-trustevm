@@ -133,8 +133,8 @@ const App = () => {
 
   const checkNetwork = async () => {
     try {
-      if (window.ethereum.networkVersion !== "80001") {
-        alert("Please connect to Mumbai Testnet!");
+      if (window.ethereum.networkVersion !== "15555") {
+        alert("Please connect to Trust EVM Testnet!");
       }
     } catch (error) {
       console.log(error);
@@ -220,7 +220,7 @@ const App = () => {
             href={TWITTER_LINK}
             target="_blank"
             rel="noreferrer"
-          >{`developed by @${TWITTER_HANDLE} Sponsored by IPFS, Polygon, Fluence, Spheron, Sequence and chainlink`}
+          >{`developed by @${TWITTER_HANDLE} Sponsored by IPFS, Trust EVM Fluence, Spheron, Sequence and chainlink`}
           </a>
 
         </div>

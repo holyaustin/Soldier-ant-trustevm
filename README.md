@@ -1,8 +1,8 @@
-# Soldier Ant Colony
+# Soldier-Ant TRUST EVM - HACKATHON SUBMISSION DETAILS
 ### An epic web3 game that mimics the bio-inspration of soldier-ant for food hunt. Players finds it easy to play and earn as well as collaborating to make game characters.
 
 ## Introduction
-This project was built for Polygon BUIDL IT : Summer 2022 Hackathon sponsored by Polygon and hoated by DevPost. The project is submitted under the Gaming track and NFT track. 
+This project was built for EVMxIdeathon 2022 Hackathon sponsored by Trust EVM hosted by DevPost. The project is submitted under the GameFi track. 
 
 ## Description
 
@@ -11,7 +11,7 @@ This project implements the bionature's attack exhbited by one of the smallest c
 ## How to run this project locally
 Try running some of the following tasks:
 Fork this repo using
-git clone https://github.com/holyaustin/soldier-ant-colony.git
+git clone https://github.com/holyaustin/Soldier-ant-trustevm
 cd soldier-ant-colony
 npx hardhat node
 npx hardhat run scripts/deploy.js --network localhost
@@ -19,11 +19,11 @@ npm run build
 
 ## How to deploy to Polygon Mumbai  blockchain, update hardhat.config
 npx hardhat run scripts/deploy.js --network mumbai
-Game contract address: 0x84f8371Ce8AC1Bb8a2DA18C951b68DEadF68861B
-Game Mumbai Explorer Url: hhttps://mumbai.polygonscan.com/address/0x84f8371Ce8AC1Bb8a2DA18C951b68DEadF68861B
+Game contract address: 0xe078fe7A93017F8e18c1C52E79632d0B94c56c26
+Game Mumbai Explorer Url: ttps://trustscan.one/address/0xe078fe7A93017F8e18c1C52E79632d0B94c56c26
 
-Marketplace contract address: 0x827034961e8545f41c4fbE789C0aCc403Cd57840
-Marketplace Mumbai Explorer Url: https://mumbai.polygonscan.com/address/0x827034961e8545f41c4fbE789C0aCc403Cd57840
+Marketplace contract address: 0x8D36089AB6eFdB3FEb2D8Ed42F7eC80f3c6d2b11
+Marketplace Mumbai Explorer Url: https://trustscan.one/address/0x8D36089AB6eFdB3FEb2D8Ed42F7eC80f3c6d2b11
 
 
 ## How to play
@@ -38,11 +38,10 @@ Final project deployed to Mumbai Testnet
 
 ## Protocols Used in this Project
 IPFS/Filecoin (NFT.Storage)
-Polygon 
+Trust EVM 
 Sequence
 NFTPort
 Spheron 
-Alchemy RPC 
 Fluence
 Chainlink
 
@@ -55,11 +54,7 @@ Video Editor
 
 
 ## Demo / Live Links
-Live Dapp - https://soldier-ant-colony-dvtsd.spheron.app
-
-https://soldier-ant-colony-r8hz7.spheron.app
-
-https://soldier-ant-colony.vercel.app/
+Live Dapp - https://soldier-ant-trustevm.vercel.app/
 
 Youtube Url: 
 
