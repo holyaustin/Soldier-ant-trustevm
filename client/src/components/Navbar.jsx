@@ -27,7 +27,7 @@ const Navbar = () => {
 
         <li className="text-black font-semibold bg-green-300 py-5 px-20 mx-8 sm:mx-3 sm:py-2 sm:px-8 rounded-full cursor-pointer hover:bg-green-800 hover:text-white ">
           <a href="https://quickswap.exchange/#/swap" target="_blank" rel="noreferrer">
-            Swap / Buy Matic Here
+            Swap / Buy Token Here
           </a>
         </li>
 
